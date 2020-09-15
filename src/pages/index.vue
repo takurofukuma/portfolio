@@ -8,7 +8,7 @@
           <div class="c-expands">
             <div class="c-expand -medium">
               <p class="about__name">福間 拓郎（Fukuma Takuro）</p>
-              <p>1990年生まれ福岡県在住、映像を作ってます。</p>
+              <p>1990年生まれ福岡県在住、映像を作っています。モーショングラフィックスが得意。美味しいご飯を食べることが好きです。フルマラソンで東京マラソンとオタワマラソンを過去に完走しているので、何事にも粘り強さあり！👋</p>
             </div>
             <div class="c-expand -medium">
               <h3 class="c-heading__lv2">Reel</h3>
