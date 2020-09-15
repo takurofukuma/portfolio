@@ -119,6 +119,7 @@
 	font-weight: 700;
 	font-family: Spectral;
 	line-height: 1.5;
+	color: #868686;
 	@include mq('max') {
 		margin-bottom: 5px;
 		font-size: 1.6rem;
