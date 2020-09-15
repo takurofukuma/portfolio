@@ -74,6 +74,9 @@
           <div class="contact__link-wrap">
             <p class="contact__link"><a href="mailto:asonedaywillberefreshing@gmail.com">asonedaywillberefreshing@gmail.com</a></p>
           </div>
+          <div class="contact__text">
+            <p>お仕事のご依頼など気軽にご相談ください！</p>
+          </div>
         </div>
       </div>
     </div>
@@ -213,6 +216,10 @@ export default {
     }
   }
   .contact__text {
+    margin-top: 25px;
     text-align: center;
+    @include mq('max') {
+      margin-top: 15px;
+    }
   }
 </style>
