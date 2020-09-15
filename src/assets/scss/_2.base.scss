@@ -1,0 +1,47 @@
+@import "setting";
+
+
+
+/*common
+---------------------------------------------------------- */
+html,
+body {
+	background: #fff;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-y: scroll;
+}
+
+body {
+	font-family: $font-famiry-sans-serif;
+	color: #000;
+	font-size: 1.4rem;
+	line-height: 1.8;
+	letter-spacing: 0.1em;
+	word-wrap: break-word;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	@include mq('max') {
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input:-webkit-autofill {
+	animation-name: onAutoFillStart;
+	transition: background-color 50000s ease-in-out 0s;
+}
+

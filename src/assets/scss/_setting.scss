@@ -1,0 +1,123 @@
+// ----------------------------------------
+// color
+// ----------------------------------------
+$_col_white            : #fff;
+$_col_black            : #000;
+$_col_light_black1     : #151316;
+$_col_light_black2     : #444;
+$_col_gray1            : #ddd;
+$_col_gray2            : #aaa;
+$_col_light_gray1      : #F0F0F0;
+$_col_light_gray2      : #F9F9F9;
+$_col_light_blue1      : #5EA5E4;
+$_col_light_blue2      : #6BB1EF;
+$_col_base             : #16171a;
+$_col_base_light       : #727683;;
+
+
+// ----------------------------------------
+// icon
+// ----------------------------------------
+@function icon($character){
+	@return unquote('\"') + unquote(str-insert($character,'\\', 1)) + unquote('\"');
+}
+$_icon_contact             : "e900";
+$_icon_facebook            : "e901";
+$_icon_twitter             : "e902";
+$_icon_arrow_up            : "e903";
+$_icon_arrow_down          : "e904";
+$_icon_arrow_left          : "e905";
+$_icon_arrow_right         : "e906";
+
+
+// ----------------------------------------
+// breakpoints
+// ----------------------------------------
+$breakpoints: (
+	'se': 320,
+	'sp': 750,
+) !default;
+ 
+@mixin mq($mq, $bp1: sp) {
+
+	$w1    : map-get($breakpoints, $bp1);
+	$min1  : 'min-width: #{convert-em($w1, 1)}';
+	$max1  : 'max-width: #{convert-em($w1)}';
+
+	@if $mq == min {
+		@media print, screen and ($min1) {
+			@content;
+		}
+	}
+	@else if $mq == max {
+		@media screen and ($max1) {
+			@content;
+		}
+	}
+}
+
+@function convert-em($width, $ge: 0) {
+	@return '#{($width + $ge) / 16}em';
+}
+
+
+// ----------------------------------------
+// fonts
+// ----------------------------------------
+$font-famiry-sans-serif:  'Cabin',Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,メイリオ,Meiryo,ＭＳ Ｐゴシック,sans-serif;
+@mixin icomoon() {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+// ----------------------------------------
+// img
+// ----------------------------------------
+@mixin cover() {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	font-family: 'object-fit: cover; object-position: center;';
+}
+
+@mixin contain() {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+	font-family: 'object-fit: contain; object-position: center;';
+}
+
+
+// ----------------------------------------
+// trantison
+// ----------------------------------------
+@mixin opacity() {
+	opacity: 0.6;
+	transition: opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@mixin scale() {
+	transform: translateZ(0) scale(1.1);
+	backface-visibility: hidden;
+}
+
+
+
