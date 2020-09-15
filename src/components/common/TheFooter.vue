@@ -3,8 +3,8 @@
 		<div class="l-footer__inner">
 			<p class="l-footer__credit"><small lang="en">© 2020 Takuro Fukuma</small></p>
 			<ul class="l-footer__sns-items">
-				<li class="l-footer__sns-item"><a href="https://twitter.com/chirichiritv" target="_blank" rel="noopener">Twitter</a></li>
-				<li class="l-footer__sns-item"><a href="https://www.facebook.com/chirichiritv" target="_blank" rel="noopener">Facebook</a></li>
+				<li class="l-footer__sns-item"><a href="https://twitter.com/takuro_fukuma" target="_blank" rel="noopener">Twitter</a></li>
+				<li class="l-footer__sns-item"><a href="https://www.facebook.com/takurofukuma0403" target="_blank" rel="noopener">Facebook</a></li>
 			</ul>
 		</div>
 	</footer>

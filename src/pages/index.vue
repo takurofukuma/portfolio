@@ -13,7 +13,7 @@
             <div class="c-expand -medium">
               <h3 class="c-heading__lv2">Reel</h3>
               <div class="c-project__iframe">
-               <iframe src="https://player.vimeo.com/video/457703892" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+               <iframe src="https://player.vimeo.com/video/457703892" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe>
               </div>
             </div>
             <div class="c-expand -medium">
