@@ -13,7 +13,7 @@
             <div class="c-expand -medium">
               <h3 class="c-heading__lv2">Reel</h3>
               <div class="c-project__iframe">
-               <iframe src="https://player.vimeo.com/video/457703892" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe>
+               <iframe src="https://player.vimeo.com/video/457703892" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
               </div>
             </div>
             <div class="c-expand -medium">
@@ -119,25 +119,13 @@ export default {
       height: 100% !important;
     }
   }
-  .c-project__items {
-    @include mq('min') {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -10px 0 0 -10px;
-      &.-x2 {
-        .c-project__item {
-          width: calc(50% - 10px);
-        }
-      }
-    }
-  }
   .c-project__item {
-    @include mq('min') {
-      margin: 10px 0 0 10px;
-    }
-    @include mq('max') {
-      &:not(:first-child) {
-        margin-top: 15px;
+    &:not(:first-child) {
+      margin-top: 40px;
+      @include mq('max') {
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
       }
     }
   }
